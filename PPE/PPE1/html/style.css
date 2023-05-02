@@ -1,0 +1,120 @@
+p
+{
+ font-size:14px;
+ }
+
+p
+{
+ font-family: Impact, "Arial Black", Arial, Verdana, Georgia;
+}
+
+@font-face
+{
+ font-family:passer.ttf ;
+
+src: url(passer.ttf);
+
+}
+
+.intro 
+{
+ font-family: 'passer.ttf';
+}
+
+.ombre
+{
+ font-family: 'passer.ttf';
+}
+
+
+body
+{
+ background-image: url(fond.jpg);
+}
+
+h1
+{
+ color: red;
+ }
+
+h2
+{
+ color: green;
+}
+
+h3
+{
+ color: navy;
+}
+.noir
+{
+border: 4px yellow groove;
+}
+
+
+
+.bord
+{
+  border: 4px yellow groove ;
+
+}
+
+.bord
+{
+  border-right: 10px;
+}
+
+.bord
+{
+ box-shadow: 8px 8px 4px black;
+}
+
+.ombre
+{
+ text-shadow: 4px 4px 4px black;
+}
+
+.ombre
+{
+ color : black;
+}
+h2
+{
+ font-style: oblique;
+}
+
+h1
+{
+ text-align: center;
+}
+
+.intro
+{
+ text-align: left;
+}
+
+.imageflottante
+{
+ float: right;
+}
+
+.dessous
+{
+ clear: both;
+}
+
+.passer
+{
+ text-align: right;
+}
+
+.souligne
+{
+ text-decoration: underline;
+}
+  font-size: 20px;
+}
+h5
+{
+ text-align: right;
+}
