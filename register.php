@@ -15,7 +15,7 @@
 
         echo "<p>L'enregistrement a effectué avec succes";
 
-        echo "<br><a href='login.html'>Se connecter</a>";
+        echo "<br><a href='index.html'>Se connecter</a>";
 ?>
     </center>
 </body>
