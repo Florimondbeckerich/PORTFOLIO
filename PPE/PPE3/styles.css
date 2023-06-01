@@ -1,0 +1,238 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0px;
+  padding: 0px;
+  width: 100vw;
+  height: 95vh;
+  overflow: hidden;
+}
+
+nav > ul {
+  margin: 0px;
+  padding: 0px;
+}
+nav li {
+  list-style-type: none;
+}
+
+nav > ul > li {
+  float: left;
+}
+
+.submenu {
+  display: none;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+.menu-mobile {
+  display: none;
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+}
+nav > ul > li {
+  float: left;
+  position: relative;
+}
+nav > ul::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+nav a {
+  display: inline-block;
+  text-decoration: none;
+}
+nav > ul > li > a {
+  padding: 20px 30px;
+  color: #fff;
+}
+nav li:hover .submenu {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0px;
+  padding: 0px;
+  z-index: 10000;
+}
+.submenu li {
+  border-bottom: 1px solid #ccc;
+}
+.submenu li a {
+  padding: 15px 30px;
+  font-size: 13px;
+  color: #222538;
+  width: 270px;
+}
+
+/* ----------- NAV HEADER TOP HOVER ----------- */
+
+.menu-livre:hover {
+  border-top: 5px solid #e44d26;
+  background-color: rgba(228, 77, 38, 0.15);
+}
+.menu-categorie:hover {
+  border-top: 5px solid #f1dc4f;
+  background-color: rgba(241, 211, 79, 0.15);
+}
+.menu-emprunt:hover {
+  border-top: 5px solid rgb(10, 234, 166);
+  background-color: rgba(45, 222, 9, 0.15);
+}
+.menu-retour:hover {
+  border-top: 5px solid rgb(247, 155, 28);
+  background-color: rgb(194, 9, 222);
+}
+.menu-usager:hover {
+  border-top: 5px solid rgb(6, 193, 244);
+  background-color: rgba(6, 192, 244, 0.15);
+}
+.menu-menu:hover {
+  border-top: 5px solid rgba(244, 129, 6, 0.475);
+  background-color: rgba(6, 192, 244, 0.15);
+}
+.menu-deconnexion:hover {
+  border-top: 5px solid rgba(46, 244, 6, 0.393);
+  background-color: rgba(149, 244, 6, 0.15);
+}
+nav > ul > li:hover a {
+  padding: 15px 30px 20px 30px;
+}
+
+/* ----------- NAV HEADER STYLE ----------- */
+  
+.menu-livre .submenu {
+  background-color: rgb(230, 100, 40);
+}
+.menu-categorie .submenu {
+  background-color: rgb(251, 216, 99);
+}
+.menu-emprunt .submenu {
+  background-color: rgb(24, 247, 124);
+}
+.menu-retour .submenu {
+  background-color: rgb(255, 0, 0);
+}
+.menu-usager .submenu {
+  background-color: #06c1f4;
+}
+.menu-menu .submenu {
+  background-color: #061af4;
+}
+.menu-deconnexion .submenu {
+  background-color: #f40675;
+}
+/* -----------  ----------- */
+
+.submenu li:hover a {
+  color: #eee;
+  font-weight: bold;
+}
+
+/* ----------- NAV HEADER RUBRIQUE HOVER  ----------- */
+
+.menu-livre .submenu li:hover {
+  background-color: rgb(210, 77, 60);
+}
+.menu-categorie .submenu li:hover {
+  background-color: rgb(200, 165, 75);
+}
+.menu-emprunt .submenu li:hover {
+  background-color: #0e82a3;
+}
+.menu-retour.submenu li:hover {
+  background-color: #641f1f;
+}
+.menu-usager .submenu li:hover {
+  background-color: rgb(0, 220, 99);
+}
+.menu-menu .submenu li:hover {
+  background-color: rgb(220, 0, 154);
+}
+.menu-deconnexion .submenu li:hover {
+  background-color: rgb(150, 0, 220);
+}
+
+
+
+/* -----------  ----------- */
+
+.menu-mobile {
+  display: none;
+}
+nav input[type="checkbox"] {
+  display: none;
+}
+nav input[type="checkbox"]:checked ~ ul {
+  display: block;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("https://expodif.fr/wp-content/uploads/2022/04/Bibliotheque-de-livres.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+main > div {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  background-color: black;
+  opacity: 0.8;
+  width: 50%;
+  height: 40%;
+  border: solid 3px white;
+  border-radius: 999px;
+  z-index: 5;
+}
+main div h1 {
+  margin: 0 auto;
+  z-index: 10;
+  color: purple;
+  opacity: 100;
+  color: #fff;
+}
+
+@media screen and (max-width: 680px) {
+  .menu-mobile {
+    display: block;
+    color: #fff;
+    background-color: rgba(29, 197, 151, 0.97);
+    text-align: center;
+    padding: 12px 0;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li,
+  nav ul li a {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a,
+  nav ul li:hover a {
+    padding: 10px 0px 10px 0px;
+  }
+  nav li:hover .submenu {
+    display: block;
+    position: static;
+  }
+}
+.neon {  
+  color: #fff;
+  text-shadow:  0 0 1px #fff, 
+           0 0 10px #fff, 
+           0 0 42px rgb(50, 96, 130),   
+           0 0 77px rgb(50, 96, 130),  
+           0 0 100px rgb(50, 96, 130)
+}
